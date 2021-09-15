@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <base href="(url of the web page)" /><title>繁殖结果界面 </title> 
+    <!-- 引入JQuery -->
+      <script type="text/javascript" src="Scripts/jquery-1.10.2.min.js"></script>
+     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+
+    <!--  CSS -->
+      <link href="Styles/bootstrap.min.css" rel="stylesheet" />  
+      <link href= "Styles/Index.css" rel="stylesheet" type="text/css" /> <!--  media="screen and (min-width: 1400px)" />-->
+      <script type="text/javascript">
+          //查询当日所有繁殖结果
+          function Gettodaybreedresult() {
+              window.external.GettodaybreedresultBKBR(); //进入breedinfo;
+          }
+      </script>
+
+</head>
+<body>
+<div  style="border:1px solid #808080; width:100%; margin-left:10px; margin-top:2px;">
+    <!--right head-->
+    <div style=" width:100%; overflow:scroll; height:768px;">
+        <table class="table" style=" width:auto; overflow:scroll;">
+          <caption style=" color:Red; margin-left:20px;"><button id="main_left_breedresult" class="btn btn-primary" onclick="Gettodaybreedresult()">查询当日繁殖信息</button></caption>
+          <thead id="main_right_breedlist_thead">
+          <tr>
+              <td >账号</td>
+              <td>父亲</td>
+              <td>母亲</td>
+              <td>孩子</td>
+              <td>繁殖费用</td>
+              <td>繁殖时间</td>
+            </tr>
+          </thead>
+          <tbody id="Breedresult_breedlist">
+          </tbody>
+        </table>    
+        <!--<div class="paging clearfix">
+        <ul class="pager" style="float:left;">
+        <li><a onclick="firstpage()">首页</a></li>
+        <li><a onclick="prepage()">上一页</a></li>
+        <li><a onclick="nextpage()">下一页</a></li>
+        <li><a onclick="lastpage()">末页</a></li>
+        <li class="fn20" style=" padding-left:10px;" id="pageindex"></li>
+        </ul>   
+        </div> -->
+    </div>
+    <!--right body-->
+    <div>
+    222222
+    </div>
+</div>
+
+</body>
+   
+</html>
